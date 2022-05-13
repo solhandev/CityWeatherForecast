@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: calc (30px +(5vw));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-family: 'Lora', serif;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#rootBody {
+    background-color: #ebebeb;
+}
+#appBody {
+	margin-left: 3vw;
+	margin-right: 3vw;
+    background-color: white;
+    font-family: 'Lora', serif;
+}
+
+#title {
+	font-size: calc(6px + 1.7vw);
+	margin-bottom:4px;
+	margin-left: 30px;
+	
+}
+
+#searchForm {
+	height: 100%;
+	display: flex;
+	margin-left: 2vw;
+}
+
+#searchButton{
+    border-style: solid;
+	background: transparent;
+    outline: none;
+    margin-left: -35px;
+}
+
+#searchButton img {
+	width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+
+
+#searchBox {
+	
+}
+
+.cardStyleContainer {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px;
+	padding: 10px;	
+}
+.weatherRowOuterContainer { 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dayNightContainer {
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .dayNightContainer {
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.dayNightTitle {
+	font-size: calc(12px + 0.7vw);
+    font-weight: bold;
+}
+
+.descriptionImage {
+	height: calc(20px + 4vw);
+	width: calc(20px + 4vw);
+}
+.overallContainer {
+	
+}
+.dateContainer {
+	font-weight: bold;
+}
+
+.overallContainer, .dateContainer {
+	font-size: calc(12px + 0.7vw);
+	
+}
+
+
+.dayNightRow {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.informationBox {
+	font-size: calc(12px + 0.6vw);
+	display: flex;
+	flex-direction: column;
+	margin-left: 1vw;
+}
+
+#currentUpper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subtitle{
+    font-size: calc(12px + 1vw);
+    font-weight: bold;
+}
+
+#currentLower {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: calc(12px + 1vw);
+    font-size: calc(12px + 1vw);
+}
+
+#WeatherTodayTemperature {
+    margin-left: calc(12px + 2.5vw);
+    font-size: calc(12px + 2.5vw);
+    font-weight: bold;
+}
+
+#WeatherTodayDescription {
+    margin-bottom: calc(12px + 1vw);
+    font-size: calc(12px + 1.5vw);
+    font-weight: bold;
+}
+#WeatherTodayTitle1 {
+    font-size: calc(12px + 1vw);
+}
+
+#WeatherTodayTitle2 {
+    font-size: calc(12px + 1.5vw);
+    font-weight: bold;
+}
+
+.currentLowerColumn {
+    display: flex;
+    flex-direction: column;
+    margin-right: calc(12px + 0.5vw);
+}
+
+#forecastCountryTitle {
+    font-size: calc(12px + 1vw);
+    font-weight: bold;
+    margin-top: calc(12px + 1vw);
+}
